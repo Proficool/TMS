@@ -56,7 +56,7 @@ string2 = "employment"
 print(string1 in string2)  
 
 # Задача 9: Вывести нужные ссимволы
-#           х = "Му name is Agent Smith"
+#           х = "ра"
 #           print(x[?]) #у
 #           print(x[?:?:?]) #nesgt
 
@@ -69,5 +69,5 @@ print(x[3:16:3])                   # вариант 2
 #             кроме одного: [1,5,2,9,2,9,1] => 5. Напишите программу, которая будет
 #             выводить уникальное число
 
-arr = [1, 5, 2, 9, 2, 9, 1]
-print([num for num in arr if arr.count(num) == 1][0])
+array = [1, 5, 2, 9, 2, 9, 1]
+print([num for num in array if array.count(num) == 1][0])
