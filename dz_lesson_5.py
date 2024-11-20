@@ -2,10 +2,10 @@
 # updated_url = url.replace("#", "/")
 # print(updated_url)
 
-def update_url():
+def update_url(url):
     return url.replace("#", "/")
-url = str(input("Введите url c решеткой : "))
-print(update_url())
+url = str(input("Введите URL с решеткой: "))
+print(update_url(url))
 
 # word = "stroka"
 # new_word = word + "ing"
@@ -23,9 +23,12 @@ print(add_word2_to_word1(word1, word2))
 
 def get_color(colors, n):
 
+# Начинаем с 0
+    index = n - 1
+
 # Проверка, что индекс находится в пределах длины списка
-    if 0 <= n < len(colors):
-        return colors[n]
+    if 0 <= index < len(colors):
+        return colors[index]
     else:
         return "Ошибка: индекс вне диапазона списка"
 
@@ -36,7 +39,7 @@ colors = input("Введите список цветов через запяту
 colors = [color.strip() for color in colors]
 
 # Ввод номера цвета 
-n = int(input(f"Введите номер цвета (0-{len(colors)-1}): "))
+n = int(input(f"Введите номер цвета (1-{len(colors)}): "))
 
 # Вывод выбранного цвета
 print(f"Цвет под номером {n}: {get_color(colors, n)}")
